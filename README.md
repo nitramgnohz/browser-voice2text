@@ -2,6 +2,17 @@
 
 适配 Chrome / Brave 的独立浏览器插件，将当前标签页播放的声音交给本机语音识别服务，持续显示原文字幕与可复制文字。
 
+## Screenshots
+
+<p align="center">
+  <img src="docs/screenshots/popup-service.png" alt="Voice2Text popup showing local service status" width="260">
+  <img src="docs/screenshots/browser-settings.png" alt="Voice2Text connection settings with the key redacted" width="620">
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/live-captions.png" alt="Live transcript panel over a video" width="760">
+</p>
+
 ## 当前状态
 
 Voice2Text 的扩展和本地识别服务已实现。扩展弹窗包含后台状态、端口/PID 和本地启动按钮。Native Messaging 安装及跨浏览器验收仍需在目标 Mac 上完成；长时间稳定性也未作保证。
