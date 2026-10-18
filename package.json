@@ -1,0 +1,1 @@
+{"name":"voice2text","private":true,"type":"module","scripts":{"test":"node --test tests/extension/*.test.mjs"}}

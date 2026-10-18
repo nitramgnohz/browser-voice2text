@@ -1,0 +1,19 @@
+#!/bin/sh
+set -eu
+cd "$(dirname "$0")"
+case "${1:-}" in
+  setup)
+    if [ ! -x .venv/bin/python ]; then
+      uv venv --python 3.12 .venv
+    fi
+    UV_CACHE_DIR="$PWD/.local/uv-cache" uv sync --frozen
+    exec .venv/bin/python -m voice2text.cli setup
+    ;;
+  *)
+    if [ ! -x .venv/bin/python ]; then
+      echo 'Run ./voice2text-run setup first.' >&2
+      exit 1
+    fi
+    exec .venv/bin/python -m voice2text.cli "$@"
+    ;;
+esac
