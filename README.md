@@ -35,6 +35,10 @@ Voice2Text 的扩展和本地识别服务已实现。扩展弹窗包含后台状
 
 - [安装与使用](docs/usage.md)
 
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
 ## 交付标准
 
 项目提供扩展、本地识别服务、安装与启停入口。服务端真实模型识别及 Chrome 实际采音转写均已验证；后台启动桥接尚待 Chrome / Brave 实机注册验收，跨视频连续性和长时间运行也尚未完成。
